@@ -15,7 +15,7 @@ Myme is a simple tool which takes a MAL list export and remaps the scores based 
 
 ## Usage
 
-The first argument to the program is the path to the MAL list export. A mapping is an existing score (i.e. a score in the list export) matched with a new score. The scores are separated by colons, and the mappings are separated by spaces. The existing score supports ranges to map multiple existing scores to a single new score. The resulting XML is written to `out.xml`.
+The first argument to the program (`<input>`) is the path to the MAL list export. The following arguments are mappings separated by spaces. A mapping is an existing score (i.e. a score in the list export) mapped to a new score. An existing score can either be a single number, or a range for multiple scores separated by a dash. The existing and new score are separated by a colon, and the resulting XML is written to `out.xml`.
 
 ### Examples
 
